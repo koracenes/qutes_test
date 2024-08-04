@@ -1,14 +1,27 @@
 import React from "react";
-import LogIn from "../assets/logIn";
-import "../App.css";
-
+import {
+  Container,
+  TopContent,
+  BottomContent,
+  Header,
+  SideBar,
+  ContentBody,
+} from "../Index.style";
+import LoginForm from "../assets/LoginForm/LoginForm";
 export default function index() {
   return (
     <>
-      <h1 className="title">NAJLEPSI SVECKI CITATI</h1>
-      <div className="container">
-        <LogIn />
-      </div>
+      <Container>
+        <TopContent>
+          <Header>HEADER</Header>
+        </TopContent>
+        <BottomContent>
+          <SideBar>
+            <LoginForm />
+          </SideBar>
+          <ContentBody>MAIN CONTENT</ContentBody>
+        </BottomContent>
+      </Container>
     </>
   );
 }
